@@ -132,8 +132,8 @@ body {
 }
 
 #navbar-btn {
-  margin-top: 20px;
-  margin-left: 25px;
+  margin-top: 10px;
+  margin-left: 10px;
   transition: all 0.3s ease-in-out;
   background-image: url('images/navbar.png'); 
   background-size: cover; 
@@ -145,7 +145,6 @@ body {
   cursor:pointer;
   overflow: hidden;
   outline:none;
-  position: absolute;
 }
 
   @media screen and (max-width: 721px) {
@@ -220,37 +219,4 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   font-family: "Lato", Sans-serif;
-}
-
-.project-header {
-  font-family: "Lato", Sans-serif;
-  text-align: center;
-  padding-top: 20px;
-  font-weight: 900;
-}
-.roblox-pics {
-  background-color:#ffffff;
-  background-image: url("images/roblox/2.png");
-  background-size: cover;
-  background-position: 40%;
-  position: relative;
-  width: 80%;
-  margin-top: 20px;
-  margin-left: 10%;
-  height: 200px;
-  transition: all 0.2s ease-in-out;
-}
-.pic-caption {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  background-color: black;
-  color: white;
-  padding: 2%;
-  font-family: "Lato", Sans-serif;
-}
-.roblox-pics1 {
-  background-color:#5582f6;
-  width: 100%;
-  height: 300px;
 }
