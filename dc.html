@@ -33,13 +33,13 @@
 
       document.addEventListener("DOMContentLoaded", function(event) { 
         var slideIndex = 1;
-        var max = 2;
+        var max = 5;
         changeSlide();
         function changeSlide(){
           if(slideIndex > max) slideIndex = 1;
           document.getElementsByClassName("roblox-pics")[0].style.backgroundImage = "url('images/roblox/" + slideIndex + ".png')";
           slideIndex ++;
-          setTimeout(changeSlide, 5000);
+          setTimeout(changeSlide, 4000);
         }
       });
       
@@ -58,9 +58,9 @@
     <h1>AYOUB MANSAR</h1>
     <ul id="pages">
       <li><a href="index.html">HOME</a></li>
-      <li><a href="#services">ABOUT</a></li>
-      <li><a href="#clients">EXPERIENCE</a></li>
-      <li><a href="projects.html">PROJECTS</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="experience.html">EXPERIENCE</a></li>
+      <li><a href="projects.html" style="color: #5582f6;">PROJECTS</a></li>
       <li><a href="#contact-box" rel="modal:open">CONTACT</a></li>
     </ul>
     <ul id="social">
@@ -71,9 +71,25 @@
 
   <div class="main">
     <button onclick="toggle()" id="navbar-btn"></button>
+    <h1 class="project-header">Virtual Washington D.C. Multiplayer Game</h1>
     <div class="roblox-pics">
     </div>
-    <h2 class="project-header">Virtual Rendition of Washington D.C.</h2>
+    <div class="stats">
+      <div class="stats-box">
+        <img src="images/group.png" style="padding-bottom: 10px"></img>
+        <h2>Played over <b>300,000+</b> times</h2>
+      </div>
+      <div class="stats-box">
+        <img src="images/code.png" style="padding-bottom: 10px"></img>
+        <h2>10+ Active Developers</h2>
+      </div>
+      <div class="stats-box">
+        <img src="images/server.png" style="padding-bottom: 10px"></img>
+        <h2>~20,000 lines of code</h2>
+      </div>
+    </div>
+  </div>
+  <div class="text">
 
   </div>
      
