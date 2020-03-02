@@ -124,6 +124,8 @@ body {
   position: relative;
   transition-duration: 0.4s;
   margin-right: 10px;
+  text-align: center;
+  width: 80px;
 }
 
 .btn-proj {
