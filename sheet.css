@@ -217,6 +217,7 @@ body {
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    opacity: 0.5;
 }
 #return-to-top img {
   display: block;
