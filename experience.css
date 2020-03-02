@@ -21,6 +21,7 @@
 .title {
   color: white;
   font-family: "Lato", Sans-serif;
+  max-width: 70%;
 }
 .text-desc {
   color: white;
@@ -45,6 +46,7 @@ a {
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  font-size: 2.3vh;
 }
 .item-subheader {
   font-family: "Lato", Sans-serif;
@@ -52,7 +54,8 @@ a {
   color: #bbb;
   margin-left: auto;
   margin-right: 30px;
-  text-align: right;  
+  text-align: right; 
+  font-size: 2vh; 
 }
 .icon{
   width: 28px;
@@ -77,4 +80,12 @@ a {
 .text-item.active .text-desc {
   max-height: 600px;
   transition: 0.7s linear;
+}
+
+@media screen and (max-width: 600px) {
+  .title {font-size: 2.7vh;}
+  .item-header {display: inline-block;}
+  .item-subheader {text-align: left; margin-top: 6px;
+    margin-bottom: 3px;}
+  .text-item { padding: 5px; }
 }
