@@ -39,6 +39,10 @@
         changeSlide();
         function changeSlide(){
           if(slideIndex > max) slideIndex = 1;
+          var preload = slideIndex + 1;
+          if(preload > max) preload = 1;
+          document.getElementById("preload").style.background = "url(images/roblox/" + preload + ".png) no-repeat -9999px -9999px";
+
           document.getElementsByClassName("roblox-pics")[0].style.backgroundImage = "url('images/roblox/" + slideIndex + ".png')";
           slideIndex ++;
           setTimeout(changeSlide, 4000);
@@ -156,6 +160,8 @@
   </div>
 
   </div>
+
+  <div id="preload"></div>
 
   <script type="text/javascript">
       $(".item-header").click(function(){
