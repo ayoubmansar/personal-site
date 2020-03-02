@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="robots" content="noindex" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="sheet.css">
     <link rel="stylesheet" type="text/css" href="projects.css">
@@ -32,7 +33,7 @@
       }
 
       document.addEventListener("DOMContentLoaded", function(event) { 
-        var slideIndex = 1;
+        var slideIndex = 2;
         var max = 5;
         changeSlide();
         function changeSlide(){
@@ -50,6 +51,18 @@
   <div id="contact-box" class="modal">
       <h2>Contact</h2>
       <p>Thanks for reaching out!<br/><br/>The best way to get in touch with me is through e-mail. You can reach me at <a href="mailto:amansar@andrew.cmu.edu">amansar@andrew.cmu.edu</a>.</p>
+      <a href="#" rel="modal:close"><b>Close</b></a>
+  </div>
+  <div id="interfaces-box" class="modal">
+      <figure>
+        <img src="images/roblox/interface1.png"></img>
+        <figcaption style="text-align: center;">Car Store Screen Example</figcaption>
+      </figure>
+      <br/>
+      <figure>
+        <img src="images/roblox/interface2.png"></img>
+        <figcaption style="text-align: center;">Metro Screen Example</figcaption>
+      </figure>
       <a href="#" rel="modal:close"><b>Close</b></a>
   </div>
 
@@ -95,20 +108,50 @@
           <div class="icon">+</div>
         </div>
         <p class="text-desc">
-          For the past three years, I’ve created a rendition of Washington, D.C., allowing players to roleplay in the virtual city. While it started as a simple cops and robbers game, it has evolved to a full-fledged community — almost every aspect of real-life United States government is integrated into our community, allowing players to take part in elections, run for political positions, join bureaucratic agencies, and much more. Players can fulfill their job’s duties in-game while also socializing with others.
+          For the past three years, I’ve created a rendition of Washington, D.C., allowing players to roleplay in the virtual city. While it started as a simple cops and robbers game, it has evolved to a full-fledged community — almost every aspect of real-life United States government is integrated into our community, allowing players to take part in elections, run for political positions, join bureaucratic agencies, and much more. Players can fulfill their job’s duties in-game while also socializing with others. We even have our own <a href="files/uscode.pdf" target="_blank">US Code (74 pages in length!)</a> and <a href="files/const.pdf" target="_blank">constitution</a>! The game allows users to do things as complex as driving cars and shooting weapons to drinking coffee at a cafe.
+          <br/>
+          <br/>
+          
         </p>
         <br/>
-        <p class="text-desc">Here are some really cool examples of the conten</p>
       </div>
+
       <div class="text-item">
         <div class="item-header">
-          <h1 class="title">Design</h1>
+          <h1 class="title">Features & Development</h1>
           <div class="icon">+</div>
         </div>
         <p class="text-desc">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad magnam obcaecati atque! Quia ipsum temporibus distinctio amet necessitatibus assumenda tempora, nam rerum eum praesentium ducimus molestiae dicta voluptas consectetur quos.
+          Our game, comprised of about <b>20,000 lines of code</b>, is delivered in LUA usinng the ROBLOX Developer Studio. As my game grew to unprecedented numbers, I have expanded the development team of one to eleven. I coordinate, compromise, manage the implementation of new features, marketing & user outreach, graphic design, game security, and bug fixing on a daily basis. I also solicit input from our own players and constantly think about user retention and developing meaningful and intuitive features/products tiered to our users.
+          <br/>
+          <br/>
+          <img src="images/roblox/cars.png" style="width: 60%; height: 60%;"></img>
+          <br/>
+          <br/>
+          Beyond empowering my technical skill set, developing and running a virtual game has given me tremendous practical experience with <b>cybersecurity</b>. Malicious players have, and always will, try to generate cars, money, property, etc. In combatting this, our code follows strict industry standards for game development to ensure the integrity of our game and the safety of our players. We do this using the <i>client-server model</i>, primarily through server-side validation as well as exploit checking on the client.
+          <br/>
+          <br/>
+          Aside from code, we bring our game to life using <b>graphic design for interfaces, 3D modeling for meshes, and animations</b>. Click <a href="#interfaces-box" rel="modal:open">here</a> to see some examples!
+          <br/>
         </p>
       </div>
+
+      <div class="text-item">
+        <div class="item-header">
+          <h1 class="title">Personal Takeaways</h1>
+          <div class="icon">+</div>
+        </div>
+        <p class="text-desc">
+          Through developing and expanding this project, I have become passionate about video game development. It has taught me that technology, although fittingly, is heavily <u>tech</u>nical, there are still very intricate considerations I must make about people. While my theoretical Computer Science courses have taught me so much, I’ve realized that through game development, I’m able to apply these skills on impactful projects that have real consequences on people other than the confines of my computer’s compiler.
+          <br/>
+          <br/>
+          Many of my players spend hours in-game, and even more hours out of the game discoursing with other community members. They have developed profound friendships, and I have been personally thanked by users suffering from depression or social anxiety for giving them an anonymous outlet and platform. Moreover, I have come to learn that my game has had positive effects on my players — increased knowledge of civics, government, English grammar, and even a safe community for those suffering from depression. My game’s community, with thousands of active members every day, shatters the “useless” or “violent” video games stereotype, and instead is a real example of how technology can be used to help others.
+          <br/>
+          <br/>
+          <img src="images/roblox/group.png" style="width: 100%; height: 40%;"></img>
+        </p>
+      </div>
+
   </div>
 
   </div>
