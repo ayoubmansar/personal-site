@@ -88,10 +88,42 @@
         <h2>~20,000 lines of code</h2>
       </div>
     </div>
+    <div class="text">
+      <div class="text-item">
+        <div class="item-header">
+          <h1 class="title">Summary</h1>
+          <div class="icon">+</div>
+        </div>
+        <p class="text-desc">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad magnam obcaecati atque! Quia ipsum temporibus distinctio amet necessitatibus assumenda tempora, nam rerum eum praesentium ducimus molestiae dicta voluptas consectetur quos.
+        </p>
+      </div>
+      <div class="text-item">
+        <div class="item-header">
+          <h1 class="title">Design</h1>
+          <div class="icon">+</div>
+        </div>
+        <p class="text-desc">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad magnam obcaecati atque! Quia ipsum temporibus distinctio amet necessitatibus assumenda tempora, nam rerum eum praesentium ducimus molestiae dicta voluptas consectetur quos.
+        </p>
+      </div>
   </div>
-  <div class="text">
 
   </div>
+
+  <script type="text/javascript">
+      $(".item-header").click(function(){
+        if($(this).parent().hasClass("active")) {
+          $(".text-item").removeClass("active");
+          $(".icon").text("+");
+        } else {
+          $(".text-item").removeClass("active");
+          $(this).parent().addClass("active");
+          $(".icon").text("+");
+          $(this).children(".icon").text("-");
+        }
+      });
+    </script>
      
   </body>
 </html> 

@@ -1,8 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
 .project-header {
   font-family: "Lato", Sans-serif;
   text-align: center;
   padding-top: 20px;
   font-weight: 900;
+  margin-left: 10%;
+  width: 80%;
 }
 .roblox-pics {
   background-color:#ffffff;
@@ -44,8 +50,60 @@
   width: 33.33%;
   float: left;
   height: 100%;
+  font-style: italic;
 }
 
-@media screen and (max-width: 450px) {
-    .stats-box {font-size: 1.5vh;}
-  }
+.text {
+  margin-top: 20px;
+  margin-left: 10%;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.title {
+  color: white;
+  font-family: "Lato", Sans-serif;
+}
+.text-desc {
+  color: white;
+  font-family: "Lato", Sans-serif;
+}
+
+.text-item {
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+}
+
+.item-header{
+  padding: 14px 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.icon{
+  width: 28px;
+  height: 28px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 25px;
+}
+.text-desc {
+  color: #888;
+  padding: 0 6px;
+  max-height: 0px;
+  overflow: hidden;
+}
+
+.text-item.active .text-desc {
+  max-height: 600px;
+  transition: .4s linear;
+}
+
+@media screen and (max-width: 600px) {
+  .text { margin-top: 30px; }
+  .stats-box {font-size: 1.5vh;}
+}
