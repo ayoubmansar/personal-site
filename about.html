@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Ayoub Mansar">
+    <meta name="keywords" content="Ayoub Mansar, Personal Website, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Ayoub Mansar">
+    <title>About</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="sheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js">
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+    <script>
+      function toggle(){
+        let navbar = document.querySelector('.sidenav');
+        let style = window.getComputedStyle(navbar);
+        let width = style.getPropertyValue('width');
+        if(width == "220px") {
+          document.getElementsByClassName("sidenav")[0].style.width = '0%';
+          document.getElementsByClassName('main')[0].style.margin = "0"
+        } else {
+          document.getElementsByClassName("sidenav")[0].style.width = '220px';
+          document.getElementsByClassName('main')[0].style.margin = "0% 0% 0% 220px"
+        }
+        open = !open;
+      }
+    </script>
+  </head>
+
+  <body>
+  <div id="contact-box" class="modal">
+      <h2>Contact</h2>
+      <p>Thanks for reaching out!<br/><br/>The best way to get in touch with me is through e-mail. You can reach me at <a href="mailto:amansar@andrew.cmu.edu">amansar@andrew.cmu.edu</a>.</p>
+      <a href="#" rel="modal:close"><b>Close</b></a>
+  </div>
+
+  <div class="sidenav">
+    <a href="http://www.ayoubmansar.com/" id = "profile-pic"><img src="images/sidebar_photo.png" alt="Ayoub Mansar" class="circle"></a>
+    <h1>AYOUB MANSAR</h1>
+    <ul id="pages">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html" style="color: #5582f6;">ABOUT</a></li>
+      <li><a href="experience.html">EXPERIENCE</a></li>
+      <li><a href="projects.html">PROJECTS</a></li>
+      <li><a href="#contact-box" rel="modal:open">CONTACT</a></li>
+    </ul>
+    <ul id="social">
+      <li><a href="https://www.linkedin.com/in/ayoubmansar/" target="_blank"><img src="images/linkedin.png"></img></a></li>
+      <li><a href="mailto:amansar@andrew.cmu.edu" target="_blank"><img src="images/mail.png"></img></a></li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <button onclick="toggle()" id="navbar-btn"></button>
+    <div id="box_about">
+      
+    </div>
+
+    </div>
+  </div>
+     
+  </body>
+</html> 
