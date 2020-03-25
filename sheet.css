@@ -190,8 +190,13 @@ body {
 }
 
 #social img {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 24px;
+}
+
+#social img:hover {
+  -webkit-filter: opacity(0.6) drop-shadow(0 0 0 #5582f6);
+  filter: opacity(0.6) drop-shadow(0 0 0 #5582f6);
 }
 
 #contact-box h2 {
