@@ -55,6 +55,10 @@ body {
   display: block;
 }
 
+.sidenav a:hover {
+    color: #9cb8ff;
+}
+
 .sidenav h1 {
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
