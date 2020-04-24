@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -6,7 +5,7 @@
     <meta name="author" content="Ayoub Mansar">
     <meta name="keywords" content="Ayoub Mansar, Personal Website, Carnegie Mellon University, Information Systems">
     <meta name="description" content="Ayoub Mansar">
-    <title>DC Project</title>
+    <title>Small Business Website Transformation</title>
 
     <meta name="robots" content="noindex" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -17,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-
+    <link href="dependencies/twentytwenty.css" rel="stylesheet" type="text/css" />
     <!-- jQuery Modal -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js">
     </script>
@@ -38,24 +37,9 @@
           document.getElementsByClassName('main')[0].style.margin = "0% 0% 0% 220px"
         }
         open = !open;
-      }
+      }      
 
-      document.addEventListener("DOMContentLoaded", function(event) { 
-        var slideIndex = 2;
-        var max = 5;
-        changeSlide();
-        function changeSlide(){
-          if(slideIndex > max) slideIndex = 1;
-          var preload = slideIndex + 1;
-          if(preload > max) preload = 1;
-          document.getElementById("preload").style.background = "url(images/roblox/" + preload + ".png) no-repeat -9999px -9999px";
-
-          document.getElementsByClassName("project-pics")[0].style.backgroundImage = "url('images/roblox/" + slideIndex + ".png')";
-          slideIndex ++;
-          setTimeout(changeSlide, 4000);
-        }
-      });
-      
+      $("#beforeafter").twentytwenty();
     </script>
   </head>
 
@@ -65,18 +49,6 @@
     <div id="contact-box" class="modal">
         <h2>Contact</h2>
         <p>Thanks for reaching out!<br/><br/>The best way to get in touch with me is through e-mail. You can reach me at <a href="mailto:amansar@andrew.cmu.edu">amansar@andrew.cmu.edu</a>.</p>
-        <a href="#" rel="modal:close"><b>Close</b></a>
-    </div>
-    <div id="interfaces-box" class="modal">
-        <figure>
-          <img src="images/roblox/interface1.png">
-          <figcaption style="text-align: center;">Car store UI example showing a 3D van mesh</figcaption>
-        </figure>
-        <br/>
-        <figure>
-          <img src="images/roblox/interface2.png">
-          <figcaption style="text-align: center;">Metro prompt example</figcaption>
-        </figure>
         <a href="#" rel="modal:close"><b>Close</b></a>
     </div>
 
@@ -91,44 +63,36 @@
         <li><a href="#contact-box" rel="modal:open">CONTACT</a></li>
       </ul>
       <ul id="social">
-        <li><a href="https://www.linkedin.com/in/ayoubmansar/" target="_blank"><img src="images/linkedin.png"></a></li>
-        <li><a href="mailto:amansar@andrew.cmu.edu" target="_blank"><img src="images/mail.png"></a></li>
+      	<li><a href="https://www.linkedin.com/in/ayoubmansar/" target="_blank"><img src="images/linkedin.png"></a></li>
+      	<li><a href="mailto:amansar@andrew.cmu.edu" target="_blank"><img src="images/mail.png"></a></li>
       </ul>
     </div>
 
     <div class="main">
       <button onclick="toggle()" id="navbar-btn"></button>
-      <h1 class="project-header">Virtual Washington D.C. Multiplayer Game</h1>
-      <div class="project-pics">
+      <h1 class="project-header">Small Business Website Transformation</h1>
+      <div class="roblox-pics">
       </div>
-      <div class="stats">
-        <div class="stats-box">
-          <img src="images/group.png" style="padding-bottom: 10px">
-          <h2>Played over <b>300,000+</b> times</h2>
-        </div>
-        <div class="stats-box">
-          <img src="images/code.png" style="padding-bottom: 10px">
-          <h2>10+ Active Developers</h2>
-        </div>
-        <div class="stats-box">
-          <img src="images/server.png" style="padding-bottom: 10px">
-          <h2>~20,000 lines of code</h2>
-        </div>
+      <br/>
+      <div id="beforeafter">
+        <img src="images/smallbusiness/beforehome.png">
+        <img src="images/smallbusiness/afterhome.png">
       </div>
       <div class="text">
         <div class="text-item">
           <div class="item-header">
-            <h1 class="title">Summary</h1>
+            <h1 class="title">Overview</h1>
             <div class="icon">+</div>
           </div>
           <p class="text-desc">
             <b>
-            One of my produest achievements is transforming a simple cops and robbers game to a full-fledged virtual community. My creation shatters stereotypes that video games are "violent" or "useless," and has allowed me to improve not only as a developer, but also as a person.
+            This website redesign wasa strictly ma
             </b>
             <br/><br/>
             Set in Washington, D.C., the game originally focused on a cops and robbers theme, allowing players to race around the city and wreak havoc or protect it. However, I quickly realized that this virtual space could serve a greater purpose. I soon began developing social features, like being able to buy properties or hang out in cafes. The game soon evolved to encapsulate a full-fledged community — almost every aspect of real-life United States government is integrated into our community, allowing players to take part in elections, run for political positions, join bureaucratic agencies, and much more. Players can fulfill their job’s duties in-game while also socializing with others. For example, citizens can still commit crimes in game, and those hired in the police force can go after them. However, there are many other roles, like Congresspeople who can pass laws (proposed updates) for the city. We even have our own fictious <a href="files/uscode.pdf" target="_blank">US Code (74 pages in length!)</a> and <a href="files/const.pdf" target="_blank">constitution</a>!
             <br/>
             <br/>
+            <img id="dc-img2" src="images/smallbusiness/contact.png">
           </p>
           <br/>
         </div>
@@ -174,6 +138,14 @@
     </div>
 
     <div id="preload"></div>
+
+    <script src="dependencies/jquery.event.move.js"></script>
+    <script src="dependencies/jquery.twentytwenty.js"></script>
+    <script>
+    $(function(){
+      $("#beforeafter").twentytwenty({default_offset_pct: 0.5});
+    });
+    </script>
 
     <script type="text/javascript">
       $(".item-header").click(function(){

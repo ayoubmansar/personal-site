@@ -8,9 +8,8 @@
   margin-left: 10%;
   width: 80%;
 }
-.roblox-pics {
+.project-pics {
   background-color:#000;
-  background-image: url("images/roblox/1.png");
   background-size: cover;
   background-position: 40%;
   position: relative;
@@ -19,6 +18,12 @@
   margin-left: 10%;
   height: 200px;
   transition: all 0.2s ease-in-out;
+}
+#roblox-pic {
+  background-image: url("images/roblox/1.png");
+}
+#sb-pic {
+  background-image: url("images/smallbusiness/1.png");
 }
 .pic-caption {
   position: absolute;
@@ -125,6 +130,11 @@ a {
 }
 #interfaces-box {
   font-family: "Lato", Sans-serif;
+}
+
+#beforeafter {
+  margin: auto;
+  width: 60vh;
 }
 
 @media screen and (max-width: 600px) {
