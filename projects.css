@@ -137,6 +137,11 @@ a {
   width: 60vh;
 }
 
+#beforeafter1 {
+  margin: auto;
+  width: 80vh;
+}
+
 #img-caption {
   padding-top: 10px;
   font-style: italic;

@@ -56,10 +56,11 @@
       <h1>AYOUB MANSAR</h1>
       <ul id="pages">
         <li><a href="index.html">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
+        <!-- <li><a href="about.html">ABOUT</a></li> -->
         <li><a href="experience.html">EXPERIENCE</a></li>
         <li><a href="projects.html" style="color: #5582f6;">PROJECTS</a></li>
         <li><a href="#contact-box" rel="modal:open">CONTACT</a></li>
+        <li><a href="resume.pdf" target="_blank">RESUME</a></li>
       </ul>
       <ul id="social">
       	<li><a href="https://www.linkedin.com/in/ayoubmansar/" target="_blank"><img src="images/linkedin.png"></a></li>
@@ -88,12 +89,15 @@
           </div>
           <p class="text-desc">
             <br/><br/>
-            <a href="http://www.pittsburghcuppa.com/index.html" target="_blank">Blue Monkey Tea</a> is a small tea business in Pittsburgh. Their website was built in 2009 on Yahoo's platform for small businesses and has not been changed since. Unfortunately, their website in their current form does not match the energy and passion that the ownner, Margaret Harris, puts in to her business. I set out to revitalize her website using modern web design standards, web accessibility, and user centered design. This website redesign was strictly made for a course project (67-250).
+            <a href="http://www.pittsburghcuppa.com/index.html" target="_blank">Blue Monkey Tea</a> is a tea business in Pittsburgh. Their website was built in 2009 on Yahoo's platform for small businesses and has not been changed since. Unfortunately, their website in their current form does not match the energy and passion that the ownner, Margaret Harris, puts in to her business. I set out to revitalize her website using modern web design standards, web accessibility, and user centered design. This website redesign was strictly made for a course project (67-250).
             <br/>
             <br/>
-            <img id="dc-img2" src="images/smallbusiness/beforeabout.png">
           </p>
-          <p class="text-desc" id="img-caption">Their "About" page prior to redesign</p>
+          <div id="beforeafter1" class="text-desc">
+            <img src="images/smallbusiness/beforecontact.png">
+            <img src="images/smallbusiness/aftercontact.png">
+          </div>
+          <p class="text-desc" id="img-caption">Their "Contact" page prior to redesign</p>
           <br/>
         </div>
 
@@ -116,7 +120,9 @@
             The website makes use of no pre-existing HTML/CSS frameworks or templates. By sticking to my design documentation, I was able to maintain a consistent design style throughout the site. The website employs a next-gen scrolling layout, common in many modern pages. This eliminates the needs for multiple pages when one page can include all of that content in a scrollable form. The homepage has been changed so that it's exciting and engaging with a video background.
             <br/>
             <br/>
-            <video src="images/smallbusiness/demo.mov" controls></video>
+            <b>Video Demo</b>
+            <br/>
+            <video src="images/smallbusiness/demo.mp4" controls></video>
           </p>
         </div>
 
@@ -147,6 +153,7 @@
     <script>
     $(function(){
       $("#beforeafter").twentytwenty({default_offset_pct: 0.5});
+      $("#beforeafter1").twentytwenty({default_offset_pct: 0.5});
     });
     </script>
 
