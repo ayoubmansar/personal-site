@@ -117,7 +117,7 @@ a {
 
 #dc-img2 {
   width: 60%;
-  height: 60%;
+  height: 50%;
   margin-left: 20%;
 }
 
@@ -135,6 +135,19 @@ a {
 #beforeafter {
   margin: auto;
   width: 60vh;
+}
+
+#img-caption {
+  padding-top: 10px;
+  font-style: italic;
+  text-align: center;
+}
+
+video {
+  border: 2px solid #bbb;
+  border-radius: 5px;
+  width: 70%;
+  height: 40%;
 }
 
 @media screen and (max-width: 600px) {
